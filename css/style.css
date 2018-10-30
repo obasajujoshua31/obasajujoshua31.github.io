@@ -84,3 +84,48 @@ footer{
 	background-color: #FF4D4D;
 	text-align: center;
 }
+#company label{
+	color: black;
+	font-size: 1.2em;
+
+
+}
+
+.form__wrapper{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
+    min-height: 280px;
+    margin-top: 80px;
+    width: 400px;
+    text-align: left;
+
+}
+
+.myButton {
+    width: 100%;
+    background-color: #0000ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.myButton:hover{
+background-color: #0080ff;
+color: white;
+}
+.myInputs {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

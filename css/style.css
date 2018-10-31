@@ -182,3 +182,11 @@ background-color: brown;
 .reference{
   color: brown;
 }
+.myButton2{
+  width: 100px;
+  padding-right:15px;
+  padding-left: 15px;
+  color: white;
+  background-color: brown;
+  font-size: 1.2em;
+}

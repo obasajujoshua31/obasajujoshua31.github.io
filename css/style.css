@@ -97,7 +97,7 @@ footer{
     padding: 20px;
     margin: auto;
     min-height: 280px;
-    margin-top: 80px;
+    margin-top: 10px;
     width: 400px;
     text-align: left;
 
@@ -128,4 +128,48 @@ color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+.dashboard-container{
+	margin-left: 0;
+}
+
+#dashboard{
+	background: url('../images/sendit4.jpg');
+	min-height: 500px;
+}
+.navBar ul{
+    list-style-type: none;
+    width: 200px;
+    background-color: inherit;
+}
+
+.navBar li a {
+    display: inline-block;
+    color: brown;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.navBar li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navBar{
+width: 20%;
+float: left;
+}
+
+.create_form{
+width: 50%;
+float: left;
+margin-top: 0px;
+
+}
+
+#dashboard label{
+  font-weight: bold;
+  color: blue;
+
 }

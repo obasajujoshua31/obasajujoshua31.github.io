@@ -148,6 +148,7 @@ color: white;
     color: brown;
     padding: 8px 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Change the link color on hover */
@@ -178,6 +179,6 @@ color: white;
 background-color: brown;
 
 }
-#reference{
+.reference{
   color: brown;
 }

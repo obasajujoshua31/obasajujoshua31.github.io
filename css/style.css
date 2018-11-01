@@ -190,3 +190,37 @@ background-color: brown;
   background-color: brown;
   font-size: 1.2em;
 }
+.admin-form{
+  margin-top: 10px;
+  float:right;
+}
+.myInputs2 {
+    width: 200px;
+    font-size: 1.1em;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.admin-form label{
+  font-size: 1.2em;
+}
+#adminButton{
+  width: 100px;
+  background-color: brown;
+}
+
+#description{
+  float:left;
+  margin-top:10px;
+  padding: 10px;
+}
+
+#cancelOrder{
+  color: brown;
+  font-weight: bold;
+  float: right;
+}

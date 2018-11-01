@@ -30,17 +30,17 @@
 		<div class ="dashboard-container">
 			<div class ="navBar">
 				<ul>
-  				<li><a href="dashboard.html">Create a new Order</a></li>
-  				<li><a href="update.html">Update an Existing Order </a></li>
-  				<li><a href="previous_orders.html">View Previous Orders</a></li>
-  				<li><a href ="cancel.html">Cancel an Order </a></li>
+  				<li><a href="dashboard.html">>>Create a new Order</a></li>
+  				<li><a href="update.html">>>Update this Order </a></li>
+  				<li><a href="previous_orders.html">>>View Previous Orders</a></li>
+  				<li><a href ="userprofile.html">>>Your Profile</a></li>
 				</ul>
 
 			</div>
 			<div class ="create_form">
 			<div class ="form__wrapper">
 				<h1>Your Order</h1>
-				<h3 class ="reference">Order ref no: </h3>
+				<span class ="reference">Order ref no: </span><a id ="cancelOrder"href ="cancel.html">Cancel this order</a>
 				<form id ="distance_form">
 					<label>Your Preferred pick up point: </label>
 					<input class="myInputs" disabled name ="pickup">
@@ -50,6 +50,11 @@
 					<br>
 					<label>Estimated Price: </label>
 					<input class =" myInputs" disabled name ="price">
+					<label>Order Status: </label>
+					<input type ="radio" name ="status"disabled value ="cancelled"> Cancel
+					<input type ="radio" name ="status" disabled value ="ontransit" checked> On Transit
+					<input type ="radio" name "status" disabled value ="delivered">Delivered
+					<span class ="reference"><a href="update.html">Update this order</a></span>
 				</form>
 			</div>			
 		</div>

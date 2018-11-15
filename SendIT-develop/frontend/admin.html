@@ -7,33 +7,31 @@
 	<meta name ="keywords" content ="courier service, parcel delivery">
 	<meta name ="author" content="Obasaju Joshua">
 	<link rel ="stylesheet" href ="./css/style.css">
-	<title> SendIT | Homepage</title>
+	<title> SendIT | Admin Homepage</title>
 </head>
 <body>
 	<header>
 		<div class ="container">
 			<div id ="brand-logo">
-				<h1>SendIT</h1>
+				<a href ="index.html"><h1>SendIT</h1></a>
 			</div>
-			<nav>
-				<ul>
-					<li class ="current"><a href ="index.html">Home</a></li>
-					<li><a href ="signup.html">Sign Up</a></li>
-					<li><a href ="signin.html">Sign In</a></li>
-				</ul>
-			</nav>
+			<div class ="admin-form"> 
+				<form action="javascript:void(0);">
+					<label>Admin Username: </label>
+					<input type ="email" name ="adminUsername" class="myInputs2" placeholder ="Enter your username">
+					<label>Admin Password: </label>
+					<input type ="password" name ="adminPassword" class="myInputs2" placeholder ="Your password">
+					<button type = "submit" class ="myButton" id="adminButton"><a href ="admin_dashboard.html">Sign in</a></button>
+				</form>
+
+			</div>
 		</div>
 	</header>
-	<section class ="company">
-		<div class ="container__wrapper">
+	<section id ="company">
 		<div class ="container">
-			
-			<div id ="details">
 			<h1>SendIT Courier Services</h1>
 			<p>SendIT is a courier service that helps users deliver parcels to different destinations. SendIT provides courier quotes based on weight categories.
 			</p>
-		</div>
-		</div>
 		</div>
 	</section>
 	<footer>

@@ -238,7 +238,7 @@ footer{
 	text-align:center;
 	padding: 20px;
   transition: 0.5s;
-  transform: perspective(500px) scale(1);
+  transform: perspective(500px) scale(0);
 } 
 .profile__details.activeProfile {
   transform: perspective(500px) scale(1);

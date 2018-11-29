@@ -23,9 +23,9 @@
 			<div id="brand-logo">
 				<h1>SendIT</h1>
 			</div>
-			<h4 class="user__dd">
-				<img class="profile__pic" src="./images/joshua.jpg"><span id="identity">Joshua</span>
-			</h4>
+			<div class="user__dd">
+				<img class="profile__pic" src="./images/joshua.jpg">
+			</div>
 			<div class="dropdown">
 				<div class="dropdown_content">
 					<ul>
@@ -46,21 +46,95 @@
 
 
 
-
-
-				<div class="profile">
-					<img id ="profilePic" src="./images/joshua.jpg">
-					<a class ="profile__view" href ="#"  onclick ="onOpen()">View Profile</a>
-					<div class ="profile__details" id = "openandclose" >
-						<h2>Obasaju Joshua <br><span>Loves coding and Video games</span></h2>
-						<p>Lives in New York, USA, He works in GICC NY</p>
-						<h3>Follow</h3>
-						<ul>
-							<li><a href ="#"><i class ="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class ="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class ="fa fa-google"></i></a></li>
-						</ul>
-						<div class ="close" id ="close" onclick="onClose()"><i class ="fa fa-times-circle"></i></div>
+				<div class = "create_order_container">
+					<div class="form__wrapper">
+						<img id="profilePic" src="./images/joshua.jpg">
+						<div class="profile__details" id="openandclose">
+							<h2>Obasaju Joshua <br><span>Loves coding and Video games</span></h2>
+							<p>Lives in New York, USA, He works in GICC NY</p>
+							<h3>Follow</h3>
+							<ul>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class ="create_order_map" id ="user_table">
+						<div class ="usertable_filter">
+						<form>
+							
+								<label id ="filter">Filter Parcel Order by</label><br>
+								<input type="radio" name="filter" value="cancelled"> <label>Cancelled</label>
+								<input type="radio" name="filter" value="transiting"> <label>Transiting</label>
+								<input type="radio" name="filter" value="placed"> <label>Placed</label>
+								<input type="radio" name="filter" value="delivered" checked> <label>Delivered</label>
+								
+						</form>
+					</div>
+							<table align="center">
+								<tr>
+									<td colspan="9">
+										<h1>Your Most Recent Orders</h1>
+										
+									</td>
+								</tr>
+								<tr>
+									<th>Parcel Id</th>
+									<th>Pick up Location</th>
+									<th>Destination</th>
+									<th>Weight</th>
+									<th>Weight Metric</th>
+									<th>Sent On</th>
+									<th>Status</th>
+									<th>Update</th>
+									<th>Cancel Order</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>25 Lekki Lagos</td>
+									<td>39 Alausa Ikeja Lagos</td>
+									<td>3.5</td>
+									<td>Kg</td>
+									<td>12th December, 2015.</td>
+									<td>Transiting</td>
+									<td><a href="update.html" title="Update this Parcel">Update</a></td>
+									<td><a href="#" title="Cancel this Parcel">Cancel</a></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>28 Lekki Lagos</td>
+									<td>346 Ikeja Lagos</td>
+									<td>4.8</td>
+									<td>Kg</td>
+									<td>18th January, 2016.</td>
+									<td>Delivered</td>
+									<td><a href="update.html" title="Update this Parcel">Update</a></td>
+									<td><a href="#" title="Cancel this Parcel">Cancel</a></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>288 Iyana Apaja Lagos</td>
+									<td>344 Alausa Ikeja Lagos</td>
+									<td>2.9</td>
+									<td>Kg</td>
+									<td>14th February, 2017.</td>
+									<td>Delivered</td>
+									<td><a href="update.html" title="Update this Parcel">Update</a></td>
+									<td><a href="#" title="Cancel this Parcel">Update</a></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>67, Ilupeju Lagos</td>
+									<td>39 Ketu Lagos</td>
+									<td>2.9</td>
+									<td>Kg</td>
+									<td>12th March, 2017.</td>
+									<td>Delivered</td>
+									<td><a href="update.html" title="Update this Parcel">Update</a></td>
+									<td><a href="#" title="Cancel this Parcel">Cancel</a></td>
+								</tr>
+								</table>	
 					</div>
 				</div>
 			</div>
@@ -69,7 +143,6 @@
 	<footer>
 		<p>SendIT Inc, Copyright &copy; 2018</p>
 	</footer>
-<script src="./javascripts/userprofile.js"></script>
 </body>
 
 </html>

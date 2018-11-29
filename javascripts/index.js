@@ -48,21 +48,21 @@ $(function() {
         $("#result").html("Better get on a plane, there are no roads ");
       } else {
         var distance = response.rows[0].elements[0].distance;
-        var duration = response.rows[0].elements[0].duration;
+        // var duration = response.rows[0].elements[0].duration;
 
         var distance_in_kilo = distance.value / 1000;
-        var distance_in_mile = distance.value / 1609.34;
-        var duration_text = duration.text;
-        var duration_value = duration.value;
-        $("#in-mile").val(distance_in_mile.toFixed(2));
-        $("#in-kilo").text(distance_in_kilo.toFixed(2));
-        $("#duration_text").val(duration_text);
-        $("#duration_value").text(duration_value);
+        // var duration_text = duration.text;
+        //var duration_value = duration.value;
+        $("#in-kilo").val(distance_in_kilo.toFixed(2));
+        //$("#duration_text").val(duration_text);
+        //$("#duration_value").text(duration_value);
+        var weight = document.getElementById("weightInKg").value;
+        var estimatedCost = weight * distance_in_kilo * 22;
+        $("#estimatedCost").val(`N${estimatedCost.toFixed(2)}`);
       }
     }
   }
-
-  $("#distance_form").submit(function(e) {
+  $("#updateMap").click(function(e) {
     e.preventDefault();
     calculateDistance();
   });
